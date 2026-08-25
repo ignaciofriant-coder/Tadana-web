@@ -52,7 +52,9 @@ a:hover{ color:var(--a3); }
 
 h1,h2,h3{ font-family:var(--serif); font-weight:400; margin:0; }
 
-img{ max-width:100%; }
+/* height:auto es obligatorio: sin él, los atributos width/height del HTML
+   ganan como "presentational hints" y anulan los aspect-ratio de más abajo. */
+img{ max-width:100%; height:auto; }
 
 input,textarea,select,button{ font-family:inherit; }
 
@@ -115,6 +117,12 @@ ul{ list-style:none; padding:0; margin:0; }
   position:fixed;
   top:0; left:0; right:0;
   z-index:50;
+  /* En horizontal el menú abierto llegaba a pasarse de la pantalla:
+     el header nunca supera el alto visible y el panel se desplaza solo. */
+  display:flex;
+  flex-direction:column;
+  max-height:100vh;
+  max-height:100dvh;
   background:transparent;
   border-bottom:1px solid transparent;
   transition:background .4s ease,border-color .4s ease,backdrop-filter .4s ease,box-shadow .4s ease;
@@ -158,6 +166,8 @@ ul{ list-style:none; padding:0; margin:0; }
 }
 
 .header__inner{
+  flex:none;
+  width:100%;
   max-width:1340px;
   margin:0 auto;
   padding:12px 26px;
@@ -244,6 +254,9 @@ ul{ list-style:none; padding:0; margin:0; }
   display:flex;
   flex-direction:column;
   gap:2px;
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
   border-top:1px solid var(--hdr-line);
   background:var(--hdr-panel);
   backdrop-filter:blur(14px);
@@ -401,7 +414,7 @@ ul{ list-style:none; padding:0; margin:0; }
 .yoga{ padding:var(--pad-section) var(--pad-x); }
 .yoga .section-head{ margin-bottom:clamp(38px,5vw,58px); }
 
-.figure-arch{ display:flex; flex-direction:column; gap:14px; }
+.figure-arch{ margin:0; display:flex; flex-direction:column; gap:14px; }
 .figure-arch img{
   width:100%;
   aspect-ratio:4/5;
@@ -714,6 +727,22 @@ ul{ list-style:none; padding:0; margin:0; }
 }
 
 @media (max-width:600px){
+  /* iOS Safari hace zoom al enfocar un campo con menos de 16px */
+  .form input,
+  .form select,
+  .form textarea{ font-size:16px; }
+
+  /* Enlaces de texto: área táctil más cómoda sin mover el diseño */
+  .footer__nav{ gap:4px 22px; }
+  .footer__nav a{ padding:7px 0; }
+  .footer__contact{ gap:2px 18px; }
+  .footer__contact a,
+  .footer__contact span{ padding:6px 0; }
+  .contact__list a{ padding:5px 0; }
+
+  /* Que el botón flotante no tape el pie */
+  .footer__legal{ padding-bottom:46px; }
+
   .brand__name{ font-size:28px; }
   .brand__mark{ height:40px; }
   .header__inner{ padding:10px 18px; }
