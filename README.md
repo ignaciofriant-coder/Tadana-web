@@ -59,7 +59,7 @@ Reemplazar `https://tadana-yoga.vercel.app` por el dominio real en:
   Cuando haya valores definidos se crea `precios.html` y se apuntan ahí esos botones
   más un enlace nuevo en el menú.
 - **Caché.** Las imágenes y fuentes se cachean un año (`vercel.json`). El CSS y el JS llevan
-  `?v=1` en `index.html`: **subir ese número al editarlos** para que los visitantes
+  `?v=N` en `index.html` (hoy `v=4`): **subir ese número al editarlos** para que los visitantes
   recurrentes reciban la versión nueva.
 
 ## Origen del diseño
