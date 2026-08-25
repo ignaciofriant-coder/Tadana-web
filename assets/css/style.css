@@ -380,12 +380,12 @@ ul{ list-style:none; padding:0; margin:0; }
 .four__cell{ text-align:center; display:flex; flex-direction:column; align-items:center; gap:14px; }
 .four__cell h3{ font-size:clamp(23px,2.6vw,28px); margin:0; }
 .four__cell p{ font-size:15px; line-height:1.8; color:var(--grey); margin:0; max-width:270px; }
-.four__ornament{ display:flex; align-items:center; justify-content:center; padding:6px; }
+.four__ornament{ display:none; align-items:center; justify-content:center; padding:6px; }
 .four__ornament svg{ max-width:270px; opacity:.55; }
 
 @media (min-width:940px){
   .four__grid{ grid-template-columns:1fr minmax(200px,.85fr) 1fr; }
-  .four__ornament{ grid-column:2; grid-row:1 / span 2; }
+  .four__ornament{ display:flex; grid-column:2; grid-row:1 / span 2; }
   .four__cell--1{ grid-column:1; grid-row:1; }
   .four__cell--2{ grid-column:3; grid-row:1; }
   .four__cell--3{ grid-column:1; grid-row:2; }
@@ -674,10 +674,8 @@ ul{ list-style:none; padding:0; margin:0; }
 .footer__mark{ height:58px; width:auto; filter:brightness(0) invert(1); opacity:.9; margin-bottom:14px; }
 .footer__name{ font-family:var(--serif); font-size:30px; color:#f7f5f2; margin:0 0 10px; }
 .footer__tagline{ font-size:14.5px; line-height:1.75; max-width:420px; margin:0 auto 30px; }
-.footer__nav{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px 26px; margin-bottom:30px; }
 .footer a{ color:var(--on-green); }
 .footer a:hover{ color:#fff; }
-.footer__nav a{ font-size:14.5px; white-space:nowrap; }
 .footer__contact{
   display:flex;
   flex-wrap:wrap;
@@ -727,14 +725,17 @@ ul{ list-style:none; padding:0; margin:0; }
 }
 
 @media (max-width:600px){
+  /* El hero ocupaba la pantalla entera y quedaba mucho cielo vacío arriba.
+     Algo más bajo, y con la foto recortada, se ve el texto antes. */
+  .hero{ min-height:86vh; min-height:86svh; }
+  .hero__content{ padding-bottom:clamp(56px,8vh,84px); }
+
   /* iOS Safari hace zoom al enfocar un campo con menos de 16px */
   .form input,
   .form select,
   .form textarea{ font-size:16px; }
 
   /* Enlaces de texto: área táctil más cómoda sin mover el diseño */
-  .footer__nav{ gap:4px 22px; }
-  .footer__nav a{ padding:7px 0; }
   .footer__contact{ gap:2px 18px; }
   .footer__contact a,
   .footer__contact span{ padding:6px 0; }
