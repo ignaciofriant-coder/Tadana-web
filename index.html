@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadana · Yoga y masaje tailandés</title>
+<meta name="description" content="Tadana: clases de yoga Hatha presenciales y online, y masaje tradicional tailandés con Rocío. Reserva tu hora.">
+<meta name="theme-color" content="#6b4a3a">
+<link rel="canonical" href="https://tadana-yoga.vercel.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tadana">
+<meta property="og:title" content="Tadana · Yoga y masaje tailandés">
+<meta property="og:description" content="Un espacio para respirar y volver a tu cuerpo. Yoga Hatha presencial y online, y masaje tradicional tailandés.">
+<meta property="og:image" content="https://tadana-yoga.vercel.app/assets/img/hero-atardecer.jpg">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:locale" content="es_CL">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" as="image" href="assets/img/hero-atardecer.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/playfair-display-400-normal-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/poppins-300-normal-latin.woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HealthAndBeautyBusiness",
+  "name":"Tadana",
+  "description":"Clases de yoga Hatha presenciales y online, y masaje tradicional tailandés.",
+  "url":"https://tadana-yoga.vercel.app/",
+  "image":"https://tadana-yoga.vercel.app/assets/img/hero-atardecer.jpg",
+  "telephone":"+56934427797",
+  "email":"tadanayoga@gmail.com",
+  "priceRange":"$$",
+  "sameAs":["https://www.instagram.com/tadana_yoga/"],
+  "openingHoursSpecification":[{
+    "@type":"OpeningHoursSpecification",
+    "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens":"10:00","closes":"20:00"
+  }],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Clases de yoga Hatha"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Masaje tradicional tailandés"}}
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<a class="sr-only" href="#inicio">Ir al contenido</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="brand" href="#inicio" aria-label="Tadana · inicio">
+      <img class="brand__mark" src="assets/img/logo.png" alt="" width="400" height="400">
+      <span class="brand__name">tadana</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__link" href="#yoga" data-i18n="nav.yoga">Yoga</a>
+      <a class="nav__link" href="#masaje" data-i18n="nav.masaje">Masaje Thai</a>
+      <a class="nav__link" href="#resenas" data-i18n="nav.resenas">Reseñas</a>
+      <a class="nav__link" href="#sobre" data-i18n="nav.sobre">Sobre mí</a>
+      <a class="nav__link" href="#contacto" data-i18n="nav.contacto">Contacto</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button class="lang__btn is-active" type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="header__cta" href="https://wa.me/56934427797?text=Hola%20Roc%C3%ADo%2C%20quiero%20reservar%20una%20hora" target="_blank" rel="noopener" data-i18n="nav.reserva">Reserva tu hora</a>
+    </div>
+
+    <button class="burger" id="burger" type="button" aria-label="Menú" aria-expanded="false" aria-controls="menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <line x1="3" y1="7" x2="21" y2="7"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="17" x2="21" y2="17"></line>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu" id="menu" hidden>
+    <a class="menu__link" href="#yoga" data-i18n="nav.yoga">Yoga</a>
+    <a class="menu__link" href="#masaje" data-i18n="nav.masaje">Masaje Thai</a>
+    <a class="menu__link" href="#resenas" data-i18n="nav.resenas">Reseñas</a>
+    <a class="menu__link" href="#sobre" data-i18n="nav.sobre">Sobre mí</a>
+    <div class="menu__foot">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button class="lang__btn is-active" type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="menu__cta" href="#contacto" data-i18n="nav.contacto">Contacto</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================ 1. HERO ============================ -->
+<section class="hero" id="inicio">
+  <picture>
+    <source srcset="assets/img/hero-atardecer.webp" type="image/webp">
+    <img class="hero__img" id="heroImg" src="assets/img/hero-atardecer.jpg"
+         alt="Atardecer sobre las montañas" width="1672" height="941" fetchpriority="high">
+  </picture>
+  <div class="hero__veil"></div>
+  <div class="hero__vignette"></div>
+
+  <div class="hero__content" id="heroContent">
+    <h1 class="hero__title" data-i18n="hero.title">Un espacio para respirar y volver a tu cuerpo</h1>
+    <p class="hero__sub" data-i18n="hero.sub">Yoga y Masaje Thai en un espacio tranquilo, con calma, atención y cercanía.</p>
+    <div class="hero__ctas">
+      <a class="btn btn--hero" href="#yoga" data-i18n="hero.cta1">Yoga</a>
+      <a class="btn btn--hero" href="#masaje" data-i18n="hero.cta2">Masaje thai</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 2. BIENVENIDA ============================ -->
+<section class="intro">
+  <div class="wrap-xs">
+    <div class="intro__ornament" aria-hidden="true">
+      <span class="intro__rule intro__rule--l"></span>
+      <img class="intro__mark" src="assets/img/logo.png" alt="" width="400" height="400" loading="lazy">
+      <span class="intro__rule intro__rule--r"></span>
+    </div>
+    <p class="intro__lead" data-i18n="intro.lead">Tadana es un espacio de yoga y masaje thai para respirar, soltar y volver a tu cuerpo.</p>
+    <p class="intro__p" data-i18n="intro.p1">Clases de Hatha yoga en grupos pequeños, presenciales y online, en español e inglés; y sesiones de masaje tradicional tailandés con atención, calma y cercanía.</p>
+    <p class="intro__note" data-i18n="serv.note">Certificada en India y en Chiang Mai, Tailandia.</p>
+  </div>
+</section>
+
+<!-- ============================ 3. LOS CUATRO ============================ -->
+<section class="four">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-head__title" data-i18n="four.title">Cómo acompaño tu práctica</h2>
+      <p class="section-head__sub" data-i18n="four.sub">Cuatro formas de encontrarnos, adaptadas a tu experiencia y a lo que necesitas hoy.</p>
+    </div>
+
+    <div class="four__grid">
+
+      <div class="four__cell four__cell--1">
+        <svg width="74" height="74" viewBox="0 0 120 120" fill="none" stroke="var(--a2)" stroke-width="1.1" aria-hidden="true">
+          <circle cx="60" cy="60" r="15"></circle>
+          <circle cx="60" cy="60" r="47"></circle>
+          <ellipse cx="60" cy="38" rx="11" ry="22"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(45 60 60)"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(90 60 60)"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(135 60 60)"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(180 60 60)"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(225 60 60)"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(270 60 60)"></ellipse>
+          <ellipse cx="60" cy="38" rx="11" ry="22" transform="rotate(315 60 60)"></ellipse>
+        </svg>
+        <h3 data-i18n="four.t1">Yoga presencial</h3>
+        <p data-i18n="four.d1">Hatha yoga en grupos pequeños, con atención personalizada. Miércoles 18:30 hrs.</p>
+      </div>
+
+      <div class="four__cell four__cell--2">
+        <svg width="74" height="74" viewBox="0 0 120 120" fill="none" stroke="var(--a2)" stroke-width="1.1" aria-hidden="true">
+          <circle cx="60" cy="60" r="13"></circle>
+          <circle cx="60" cy="60" r="30"></circle>
+          <circle cx="60" cy="60" r="47"></circle>
+          <ellipse cx="60" cy="41" rx="8" ry="19"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(30 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(60 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(90 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(120 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(150 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(180 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(210 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(240 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(270 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(300 60 60)"></ellipse>
+          <ellipse cx="60" cy="41" rx="8" ry="19" transform="rotate(330 60 60)"></ellipse>
+        </svg>
+        <h3 data-i18n="four.t2">Yoga online</h3>
+        <p data-i18n="four.d2">Clases en vivo por Google Meet, desde donde estés. Martes y viernes 7:00 hrs.</p>
+      </div>
+
+      <div class="four__ornament" aria-hidden="true">
+        <svg width="100%" viewBox="0 0 260 260" fill="none" stroke="var(--a3)" stroke-width="1">
+          <circle cx="130" cy="130" r="128"></circle>
+          <circle cx="130" cy="130" r="112"></circle>
+          <circle cx="130" cy="130" r="74"></circle>
+          <circle cx="130" cy="130" r="40"></circle>
+          <circle cx="130" cy="130" r="18"></circle>
+          <ellipse cx="130" cy="86" rx="17" ry="44"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(30 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(60 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(90 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(120 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(150 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(180 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(210 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(240 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(270 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(300 130 130)"></ellipse>
+          <ellipse cx="130" cy="86" rx="17" ry="44" transform="rotate(330 130 130)"></ellipse>
+          <line x1="130" y1="2" x2="130" y2="18"></line>
+          <line x1="2" y1="130" x2="18" y2="130"></line>
+          <line x1="130" y1="242" x2="130" y2="258"></line>
+          <line x1="242" y1="130" x2="258" y2="130"></line>
+        </svg>
+      </div>
+
+      <div class="four__cell four__cell--3">
+        <svg width="74" height="74" viewBox="0 0 120 120" fill="none" stroke="var(--a2)" stroke-width="1.1" aria-hidden="true">
+          <circle cx="60" cy="60" r="17"></circle>
+          <circle cx="60" cy="60" r="47"></circle>
+          <ellipse cx="60" cy="35" rx="14" ry="25"></ellipse>
+          <ellipse cx="60" cy="35" rx="14" ry="25" transform="rotate(60 60 60)"></ellipse>
+          <ellipse cx="60" cy="35" rx="14" ry="25" transform="rotate(120 60 60)"></ellipse>
+          <ellipse cx="60" cy="35" rx="14" ry="25" transform="rotate(180 60 60)"></ellipse>
+          <ellipse cx="60" cy="35" rx="14" ry="25" transform="rotate(240 60 60)"></ellipse>
+          <ellipse cx="60" cy="35" rx="14" ry="25" transform="rotate(300 60 60)"></ellipse>
+        </svg>
+        <h3 data-i18n="four.t3">Masaje thai</h3>
+        <p data-i18n="four.d3">Estiramientos asistidos y acupresión sobre las líneas «sen». Sesiones de 60 min a 2 hrs.</p>
+      </div>
+
+      <div class="four__cell four__cell--4">
+        <svg width="74" height="74" viewBox="0 0 120 120" fill="none" stroke="var(--a2)" stroke-width="1.1" aria-hidden="true">
+          <circle cx="60" cy="60" r="11"></circle>
+          <circle cx="60" cy="60" r="24"></circle>
+          <circle cx="60" cy="60" r="37"></circle>
+          <circle cx="60" cy="60" r="47"></circle>
+          <ellipse cx="60" cy="40" rx="9" ry="20"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(36 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(72 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(108 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(144 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(180 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(216 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(252 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(288 60 60)"></ellipse>
+          <ellipse cx="60" cy="40" rx="9" ry="20" transform="rotate(324 60 60)"></ellipse>
+        </svg>
+        <h3 data-i18n="four.t4">Sesiones 1 : 1</h3>
+        <p data-i18n="four.d4">Práctica personalizada, presencial u online, adaptada a tu cuerpo y a tu momento.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 4. YOGA ============================ -->
+<section class="yoga" id="yoga">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" data-i18n="yoga.kicker">Yoga Hatha</p>
+      <h2 class="section-title" data-i18n="yoga.title">Yoga que se siente amable</h2>
+    </div>
+
+    <div class="split">
+      <figure class="figure-arch">
+        <picture>
+          <source srcset="assets/img/clase-yoga.webp" type="image/webp">
+          <img src="assets/img/clase-yoga.jpg" alt="Rocío guiando una clase de Hatha yoga"
+               width="900" height="1200" loading="lazy" style="object-position:center 45%">
+        </picture>
+        <figcaption data-i18n="yoga.credential">Instructora de yoga · Escuela Pankaj Yogpeeth, Varkala, India</figcaption>
+      </figure>
+
+      <div>
+        <p class="body-text" data-i18n="yoga.body">Yoga significa «unión»: un método para equilibrar y armonizar el cuerpo, la mente y las emociones. Trabajamos con posturas sostenidas por varias respiraciones, hasta llegar a un estado de meditación, con respeto y autocuidado, explorando nuestros límites.</p>
+
+        <h3 class="sub-title" data-i18n="yoga.benefTitle">Beneficios</h3>
+        <ul class="tags">
+          <li data-i18n="yoga.beneficios.0">Mejora la flexibilidad</li>
+          <li data-i18n="yoga.beneficios.1">Mejora la movilidad articular</li>
+          <li data-i18n="yoga.beneficios.2">Fortalece el cuerpo de manera integral</li>
+          <li data-i18n="yoga.beneficios.3">Reduce el estrés</li>
+          <li data-i18n="yoga.beneficios.4">Mayor conexión cuerpo y mente</li>
+          <li data-i18n="yoga.beneficios.5">Claridad mental</li>
+          <li data-i18n="yoga.beneficios.6">Aumenta la energía</li>
+        </ul>
+
+        <div class="schedule">
+          <div class="schedule__card">
+            <p class="schedule__label" data-i18n="yoga.presLabel">Presencial</p>
+            <p class="schedule__info" data-i18n="yoga.presInfo">Miércoles 18:30 hrs</p>
+          </div>
+          <div class="schedule__card">
+            <p class="schedule__label" data-i18n="yoga.onlineLabel">Online en vivo</p>
+            <p class="schedule__info" data-i18n="yoga.onlineInfo">Martes y viernes 7:00 hrs · Google Meet</p>
+          </div>
+        </div>
+
+        <p class="note" data-i18n="yoga.groups">Grupos pequeños, con atención personalizada. Clases en español e inglés.</p>
+
+        <a class="btn btn--sm" href="https://wa.me/56934427797?text=Hola%20Roc%C3%ADo%2C%20quiero%20consultar%20precios%20de%20las%20clases%20de%20yoga"
+           target="_blank" rel="noopener" data-i18n="yoga.cta">Consultar precios de yoga</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 5. FOTO PUENTE ============================ -->
+<section class="band" aria-hidden="true">
+  <picture>
+    <source srcset="assets/img/yoga-montana.webp" type="image/webp">
+    <img src="assets/img/yoga-montana.jpg" alt="" width="1200" height="1444" loading="lazy">
+  </picture>
+  <div class="band__veil"></div>
+</section>
+
+<!-- ============================ 6. MASAJE THAI ============================ -->
+<section class="masaje" id="masaje">
+  <span class="masaje__glyph" aria-hidden="true">เส้น</span>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" data-i18n="masaje.kicker">Masaje tradicional tailandés</p>
+      <h2 class="section-title" data-i18n="masaje.title">¿Conoces el masaje thai?</h2>
+    </div>
+
+    <div class="split">
+      <div>
+        <p class="body-text" data-i18n="masaje.body">Una antigua técnica terapéutica asiática que mezcla sabidurías del yoga, el budismo y la acupuntura china, y que se enseñaba en los templos. Trabaja sobre las líneas energéticas del cuerpo, llamadas «sen», mediante estiramientos asistidos hacia posturas de yoga y puntos de acupresión.</p>
+
+        <ul class="benefits">
+          <li><span class="benefits__mark" aria-hidden="true">✦</span><span data-i18n="masaje.beneficios.0">Relajación corporal y tranquilidad mental</span></li>
+          <li><span class="benefits__mark" aria-hidden="true">✦</span><span data-i18n="masaje.beneficios.1">Mejora la circulación y los centros linfáticos</span></li>
+          <li><span class="benefits__mark" aria-hidden="true">✦</span><span data-i18n="masaje.beneficios.2">Trabaja la flexibilidad muscular y la movilidad articular</span></li>
+          <li><span class="benefits__mark" aria-hidden="true">✦</span><span data-i18n="masaje.beneficios.3">Reduce el estrés</span></li>
+          <li><span class="benefits__mark" aria-hidden="true">✦</span><span data-i18n="masaje.beneficios.4">Mejora la postura</span></li>
+        </ul>
+
+        <ul class="durations">
+          <li data-i18n="masaje.dur1">60 min</li>
+          <li data-i18n="masaje.dur2">1.30 hrs</li>
+          <li data-i18n="masaje.dur3">2 hrs · sesión completa</li>
+        </ul>
+
+        <p class="note" data-i18n="masaje.detail">Se realiza con ropa cómoda, sobre una superficie acolchada en el suelo y sin aceites. Cada sesión termina con una breve sonoterapia.</p>
+
+        <a class="btn btn--sm" href="https://wa.me/56934427797?text=Hola%20Roc%C3%ADo%2C%20quiero%20consultar%20precios%20del%20masaje%20thai"
+           target="_blank" rel="noopener" data-i18n="masaje.cta">Consultar precios de masaje</a>
+      </div>
+
+      <figure class="figure-arch">
+        <picture>
+          <source srcset="assets/img/certificacion-thai.webp" type="image/webp">
+          <img src="assets/img/certificacion-thai.jpg" alt="Rocío recibiendo su certificación en Sunshine Massage School, Chiang Mai"
+               width="900" height="1199" loading="lazy" style="object-position:center 35%">
+        </picture>
+        <figcaption data-i18n="masaje.credential">Certificación · Sunshine Massage School, Chiang Mai, Tailandia</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 7. RESEÑAS ============================ -->
+<section class="reviews" id="resenas">
+  <div class="wrap-sm">
+    <div class="section-head">
+      <div class="rating">
+        <span class="rating__score">5.0</span>
+        <div class="rating__meta">
+          <div class="rating__stars" aria-hidden="true">★★★★★</div>
+          <p class="rating__count" data-i18n="rev.count">17 reseñas en Google</p>
+        </div>
+      </div>
+      <h2 class="reviews__title" data-i18n="rev.title">Lo que dicen quienes ya vinieron</h2>
+    </div>
+
+    <div class="reviews__grid">
+      <figure class="review">
+        <div class="review__stars" aria-hidden="true">★★★★★</div>
+        <blockquote><span data-i18n="rev.items.0.quote">Rocío me hizo sentir cómoda desde el primer momento. Tiene muy buena comunicación, transmite confianza y controla perfectamente la presión.</span></blockquote>
+        <figcaption data-i18n="rev.items.0.author">Adriana M.</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review__stars" aria-hidden="true">★★★★★</div>
+        <blockquote><span data-i18n="rev.items.1.quote">La recomiendo 100%, es una experiencia no solo física sino también espiritual y emocional.</span></blockquote>
+        <figcaption data-i18n="rev.items.1.author">Paulina L.</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="review__stars" aria-hidden="true">★★★★★</div>
+        <blockquote><span data-i18n="rev.items.2.quote">Calma, atención y sensibilidad… 60 minutos después estaba profundamente relajado.</span></blockquote>
+        <figcaption data-i18n="rev.items.2.author">Mark B.</figcaption>
+      </figure>
+    </div>
+
+    <div class="reviews__cta">
+      <a class="btn-outline" href="https://www.google.com/maps/place/Tadana+Yoga+%26+Masaje+Thai/@-39.2724635,-71.9734466,17z"
+         target="_blank" rel="noopener" data-i18n="rev.cta">Ver todas en Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 8. SOBRE ROCÍO ============================ -->
+<section class="about" id="sobre">
+  <div class="wrap-sm">
+    <div class="section-head">
+      <p class="kicker" data-i18n="about.kicker">Un poco sobre mí</p>
+      <h2 class="contact__title" data-i18n="about.title">Hola, soy Rocío</h2>
+    </div>
+
+    <div class="about__grid">
+      <picture>
+        <source srcset="assets/img/rocio.webp" type="image/webp">
+        <img class="about__portrait" src="assets/img/rocio.jpg"
+             alt="Rocío, instructora de yoga y terapeuta de masaje thai" width="810" height="1440" loading="lazy">
+      </picture>
+
+      <div>
+        <p class="about__p" data-i18n="about.p1">Mujer viajera, estudiante de psicología y practicante de yoga desde hace más de 7 años, amante y cuidadora de la naturaleza y de los deportes al aire libre. En mi camino como migrante viví en España y cinco años en Australia, y viajé por Asia haciendo voluntariados durante un año. Trabajé como acompañante terapéutica, en salud mental y en zonas vulnerables.</p>
+        <p class="about__p" data-i18n="about.p2">Valoro a las personas tal cual y como son, sin juicios y sin expectativas, y eso mismo trato de transmitir en mis terapias. Con respeto, paciencia, humildad y amor, podremos crecer todos juntos hacia un lugar mejor.</p>
+
+        <div class="about__certs">
+          <figure>
+            <picture>
+              <source srcset="assets/img/certificacion-india.webp" type="image/webp">
+              <img src="assets/img/certificacion-india.jpg" alt="Rocío recibiendo su certificación de instructora de yoga en Pankaj Yogpeeth, India"
+                   width="760" height="1013" loading="lazy" style="object-position:center 30%">
+            </picture>
+            <figcaption data-i18n="about.certYoga">Formación de instructora · Pankaj Yogpeeth, Varkala, India</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source srcset="assets/img/clase-amanecer.webp" type="image/webp">
+              <img src="assets/img/clase-amanecer.jpg" alt="Clase de yoga al amanecer durante su formación en Asia"
+                   width="900" height="1199" loading="lazy" style="object-position:center 55%">
+            </picture>
+            <figcaption data-i18n="about.certAsia">Un año de práctica y voluntariados por Asia</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 9. CONTACTO ============================ -->
+<section class="contact" id="contacto">
+  <div class="wrap-sm">
+    <div class="section-head">
+      <h2 class="contact__title" data-i18n="contact.title">Contáctame</h2>
+      <p class="contact__body" data-i18n="contact.body">Cuéntame qué necesitas y coordinamos tu hora. Respondo por WhatsApp, Instagram o el formulario.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__col">
+
+        <div>
+          <h3 class="contact__h3" data-i18n="contact.details">Contacto</h3>
+          <ul class="contact__list">
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--a2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"></path></svg>
+              <a href="https://wa.me/56934427797" target="_blank" rel="noopener">+56 9 3442 7797</a>
+              <a class="contact__alt" href="https://wa.me/5491155065685" target="_blank" rel="noopener">· +54 9 11 5506 5685</a>
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--a2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3"></rect><path d="M3 7l9 6 9-6"></path></svg>
+              <a href="mailto:tadanayoga@gmail.com">tadanayoga@gmail.com</a>
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--a2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5V12l3.2 2"></path></svg>
+              <span data-i18n="contact.hours">Lunes a sábado · 10:00–20:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="contact__h3" data-i18n="contact.follow">Síguenos en redes</h3>
+          <p class="contact__follow-body" data-i18n="contact.followBody">Publico horarios, avisos de clases y novedades en Instagram. Escríbeme por ahí o por WhatsApp cuando quieras.</p>
+          <div class="socials">
+            <a class="social" href="https://www.instagram.com/tadana_yoga/" target="_blank" rel="noopener">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--a2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1"></circle></svg>
+              @tadana_yoga
+            </a>
+            <a class="social" href="https://wa.me/56934427797?text=Hola%20Roc%C3%ADo%2C%20quiero%20reservar%20una%20hora" target="_blank" rel="noopener">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="var(--a2)" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+        <p class="form__lead" data-i18n="contact.formLead">Completa el formulario y te contacto.</p>
+
+        <label for="f-nombre" data-i18n="contact.name">Nombre</label>
+        <input id="f-nombre" name="nombre" type="text" required autocomplete="name"
+               placeholder="Nombre" data-i18n-attr="placeholder:contact.name">
+
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email"
+               placeholder="Email" data-i18n-attr="placeholder:contact.emailPh">
+
+        <label for="f-servicio" data-i18n="contact.tool">Herramientas para acompañarte</label>
+        <select id="f-servicio" name="servicio">
+          <option data-i18n="contact.optYoga">Yoga</option>
+          <option data-i18n="contact.optThai">Masaje Tailandés</option>
+          <option data-i18n="contact.optBoth">Yoga y masaje</option>
+          <option data-i18n="contact.optOther">Otra consulta</option>
+        </select>
+
+        <label for="f-mensaje" data-i18n="contact.msg">Mensaje</label>
+        <textarea id="f-mensaje" name="mensaje" rows="5" required
+                  placeholder="Mensaje" data-i18n-attr="placeholder:contact.msg"></textarea>
+
+        <button type="submit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          <span data-i18n="contact.send">Enviar por WhatsApp</span>
+        </button>
+        <p class="form__hint" data-i18n="contact.formHint">Se abre WhatsApp con tu mensaje ya escrito. Solo tienes que darle enviar.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ 10. FOOTER ============================ -->
+<footer class="footer">
+  <img class="footer__mark" src="assets/img/logo.png" alt="Tadana" width="400" height="400" loading="lazy">
+  <p class="footer__name">Tadana</p>
+  <p class="footer__tagline" data-i18n="footer.tagline">Yoga y masaje tradicional tailandés, con calma y cercanía.</p>
+
+  <nav class="footer__nav" aria-label="Pie de página">
+    <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+    <a href="#yoga" data-i18n="nav.yoga">Yoga</a>
+    <a href="#masaje" data-i18n="nav.masaje">Masaje Thai</a>
+    <a href="#resenas" data-i18n="nav.resenas">Reseñas</a>
+    <a href="#sobre" data-i18n="nav.sobre">Sobre mí</a>
+    <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+  </nav>
+
+  <div class="footer__contact">
+    <a href="https://wa.me/56934427797" target="_blank" rel="noopener">+56 9 3442 7797</a>
+    <a href="mailto:tadanayoga@gmail.com">tadanayoga@gmail.com</a>
+    <a href="https://www.instagram.com/tadana_yoga/" target="_blank" rel="noopener">@tadana_yoga</a>
+  </div>
+
+  <div class="footer__legal">© <span id="year">2026</span> Tadana · <span data-i18n="footer.rights">Todos los derechos reservados</span></div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/56934427797?text=Hola%20Roc%C3%ADo%2C%20quiero%20reservar%20una%20hora"
+   target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="31" height="31" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+
+<script src="assets/js/main.js?v=1" defer></script>
+</body>
+</html>
