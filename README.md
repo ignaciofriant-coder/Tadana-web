@@ -39,7 +39,7 @@ Cada `git push` a `main` publica una versión nueva.
 
 ### Al conectar el dominio definitivo
 
-Reemplazar `https://tadana-yoga.vercel.app` por el dominio real en:
+Reemplazar `https://tadana-web.vercel.app` por el dominio real en:
 
 - `index.html` → `<link rel="canonical">`, `og:image`, `og:url` y el bloque JSON-LD
 - `robots.txt` → línea `Sitemap:`
