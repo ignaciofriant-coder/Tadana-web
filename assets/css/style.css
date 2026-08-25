@@ -729,6 +729,9 @@ ul{ list-style:none; padding:0; margin:0; }
      Algo más bajo, y con la foto recortada, se ve el texto antes. */
   .hero{ min-height:86vh; min-height:86svh; }
   .hero__content{ padding-bottom:clamp(56px,8vh,84px); }
+  /* Sin el sobrante del parallax: en vertical ese 28% de más obligaba
+     a agrandar la foto un 28% extra y se notaba en la nitidez. */
+  .hero__img{ top:0; height:100%; }
 
   /* iOS Safari hace zoom al enfocar un campo con menos de 16px */
   .form input,

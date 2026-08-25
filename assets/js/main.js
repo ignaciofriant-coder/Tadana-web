@@ -281,7 +281,11 @@
     if (reduceMotion) { return; }
 
     if (heroImg) {
-      heroImg.style.transform = 'translate3d(0,' + (p * vh * 0.12).toFixed(1) + 'px,0) scale(' + (1 + p * 0.05).toFixed(4) + ')';
+      // En móvil la imagen mide exactamente el alto del hero: no hay sobrante
+      // que desplazar, y moverla dejaría ver el borde.
+      heroImg.style.transform = window.innerWidth > 600
+        ? 'translate3d(0,' + (p * vh * 0.12).toFixed(1) + 'px,0) scale(' + (1 + p * 0.05).toFixed(4) + ')'
+        : '';
     }
     if (heroContent) {
       if (p > 0.001) {
