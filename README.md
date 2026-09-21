@@ -29,21 +29,34 @@ python -m http.server 8790
 Y abrir http://localhost:8790 — hace falta un servidor, no basta con abrir el archivo,
 porque las fuentes y el manifest se piden por HTTP.
 
-## Deploy en Vercel
+## Producción: el VPS
 
-1. En Vercel: **Add New → Project → Import Git Repository** y elegir este repo.
-2. Framework preset: **Other**. Build command: vacío. Output directory: vacío (raíz).
-3. Deploy.
+El sitio vive en **https://tadana.cl**, servido por nginx desde `/var/www/tadana` en el VPS
+de Hostinger (Brasil, `187.77.54.138`), con Cloudflare por delante y certificado de
+Let's Encrypt que certbot renueva solo.
 
-Cada `git push` a `main` publica una versión nueva.
+Para publicar un cambio: `git push` a `main` y después, en el servidor, correr
 
-### Al conectar el dominio definitivo
+    deploy-tadana
 
-Reemplazar `https://tadana-web.vercel.app` por el dominio real en:
+que hace `git fetch` + `git reset --hard origin/main` sobre `/var/www/tadana`.
 
-- `index.html` → `<link rel="canonical">`, `og:image`, `og:url` y el bloque JSON-LD
-- `robots.txt` → línea `Sitemap:`
-- `sitemap.xml` → `<loc>`
+La configuración de nginx está en `/etc/nginx/sites-available/tadana.cl` y replica lo que
+hacía `vercel.json`: un año de caché para `/assets/img` y `/assets/fonts`, una hora para
+`/assets/css` y `/assets/js`, las cuatro cabeceras de seguridad, `www` redirigido al apex y
+HTTP redirigido a HTTPS. Ojo: en nginx un `add_header` dentro de un `location` **descarta**
+todos los heredados, por eso las cabeceras de seguridad están repetidas en cada bloque.
+
+DNS en Cloudflare: dos registros A (`@` y `www`) a la IP del VPS. El modo SSL tiene que
+estar en **Full (strict)**; con Flexible se entra en loop de redirecciones contra el
+redirect a HTTPS de nginx.
+
+## Vercel: copia de staging
+
+El proyecto `tadana-web` sigue conectado al repo y publica cada push en
+`https://tadana-web.vercel.app`. Se usa para previews de ramas antes de tocar producción.
+Lleva `X-Robots-Tag: noindex` en `vercel.json` para que esa copia no le compita en Google
+al dominio real.
 
 ## Decisiones que conviene recordar
 
@@ -58,7 +71,8 @@ Reemplazar `https://tadana-web.vercel.app` por el dominio real en:
 - **Precios.** Todavía no existe la página; los botones de precios abren WhatsApp.
   Cuando haya valores definidos se crea `precios.html` y se apuntan ahí esos botones
   más un enlace nuevo en el menú.
-- **Caché.** Las imágenes y fuentes se cachean un año (`vercel.json`). El CSS y el JS llevan
+- **Caché.** Las imágenes y fuentes se cachean un año (nginx en producción, `vercel.json`
+  en la copia de Vercel). El CSS y el JS llevan
   `?v=N` en `index.html` (hoy `v=4`): **subir ese número al editarlos** para que los visitantes
   recurrentes reciban la versión nueva.
 

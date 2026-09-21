@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tadana-web.vercel.app/sitemap.xml
+Sitemap: https://tadana.cl/sitemap.xml
