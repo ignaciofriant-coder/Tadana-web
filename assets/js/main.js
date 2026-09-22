@@ -88,7 +88,121 @@
         waIntro: 'Hola Rocío, soy',
         waInterest: 'Me interesa'
       },
-      footer: { tagline: 'Yoga y masaje tradicional tailandés, con calma y cercanía.', rights: 'Todos los derechos reservados' }
+      footer: { tagline: 'Yoga y masaje tradicional tailandés, con calma y cercanía.', rights: 'Todos los derechos reservados' },
+      meta: {
+        home: 'Tadana: clases de yoga Hatha presenciales y online, y masaje tradicional tailandés con Rocío. Reserva tu hora.',
+        yoga: 'Hatha yoga en grupos pequeños, presencial y online en vivo por Google Meet. Clases en español e inglés con Rocío, instructora formada en India.',
+        masaje: 'Masaje tailandés tradicional: estiramientos asistidos y acupresión, sin aceites y con ropa cómoda. Sesiones de 60 min a 2 horas, con formación en Chiang Mai.'
+      },
+      more: { yoga: 'Conocer las clases', masaje: 'Más sobre el masaje' },
+      yogaPage: {
+        title: 'Clases de Hatha yoga, presenciales y online',
+        sub: 'Grupos pequeños, atención personalizada y una práctica que respeta tus tiempos. En español e inglés.',
+        ctaBook: 'Reservar una clase',
+        ctaSchedule: 'Ver horarios',
+        whatTitle: 'Mucho más que ejercicio físico',
+        what1: 'Yoga significa «unión»: un método para equilibrar y armonizar el cuerpo, la mente y las emociones. Es una ciencia de vida que ayuda a encontrar armonía en todos los niveles: físico, mental, emocional y espiritual.',
+        what2: 'En el Hatha yoga trabajamos con posturas sostenidas durante varias respiraciones, sincronizando el movimiento con el aliento hasta llegar a un estado de meditación. Es una práctica de consciencia corporal, con respeto y autocuidado, que fortalece la energía vital y te invita a explorar tus límites.',
+        howTitle: 'Cómo es una clase',
+        howSub: 'Cada práctica recorre el mismo camino: del movimiento a la quietud.',
+        step1t: 'Posturas',
+        step1d: 'Posturas sostenidas durante varias respiraciones, adaptadas a tu experiencia y a lo que tu cuerpo necesita ese día.',
+        step2t: 'Respiración',
+        step2d: 'El movimiento se sincroniza con el aliento. Es lo que une el cuerpo con la mente y te trae al presente.',
+        step3t: 'Quietud',
+        step3d: 'La práctica te lleva hacia un estado de meditación, a la calma y a la tranquilidad.',
+        whenTitle: 'Modalidades y horarios',
+        presDetail: 'En grupo pequeño, con atención personalizada.',
+        onlineDetail: 'Clases en directo, desde donde estés.',
+        oneLabel: 'Sesiones 1 : 1',
+        oneInfo: 'Presencial u online · a coordinar',
+        oneDetail: 'Una práctica personalizada, adaptada a tu cuerpo y a tu momento.',
+        priceNote: 'Hay clase suelta y packs. Escríbeme y te cuento los valores.',
+        trainKicker: 'Formación',
+        trainTitle: 'Formada en India',
+        train1: 'Me formé como instructora en la escuela Pankaj Yogpeeth, en Varkala, India, y practico yoga hace más de 7 años.',
+        train2: 'Valoro a las personas tal como son, sin juicios y sin expectativas, y eso es lo que intento transmitir en cada clase.',
+        aboutLink: 'Conocer más sobre mí',
+        faqTitle: 'Preguntas frecuentes',
+        faq: [
+          {
+            q: '¿Necesito experiencia previa?',
+            a: 'No. Las clases se adaptan a tu experiencia y a lo que necesitas ese día. Como los grupos son pequeños, puedo darte atención personalizada y proponerte variantes de cada postura.'
+          },
+          {
+            q: '¿Qué tipo de yoga enseñas?',
+            a: 'Hatha yoga: posturas sostenidas durante varias respiraciones, con el movimiento sincronizado con el aliento, que llevan hacia un estado de meditación.'
+          },
+          {
+            q: '¿Cómo funcionan las clases online?',
+            a: 'Son en vivo por Google Meet, los martes y viernes a las 7:00, así que puedes practicar desde donde estés.'
+          },
+          { q: '¿Las clases son en inglés?', a: 'Sí. Doy clases en español y en inglés.' },
+          {
+            q: '¿Das clases particulares?',
+            a: 'Sí: sesiones 1 a 1, presenciales u online, adaptadas a tu cuerpo y a tu momento.'
+          },
+          {
+            q: '¿Cuánto cuesta una clase?',
+            a: 'Hay clase suelta y packs, tanto presenciales como online. Escríbeme por WhatsApp y te cuento los valores.'
+          }
+        ],
+        endTitle: '¿Te gustaría probar una clase?',
+        endBody: 'Escríbeme y coordinamos tu primera práctica, presencial u online.',
+        cross: 'También doy masaje tradicional tailandés.',
+        crossLink: 'Conocer el masaje thai'
+      },
+      masajePage: {
+        title: 'Masaje thai tradicional',
+        sub: 'Estiramientos asistidos y acupresión para soltar tensiones y volver a la calma. En español e inglés.',
+        ctaBook: 'Reservar una sesión',
+        ctaSessions: 'Ver duraciones',
+        what1: 'El masaje tradicional tailandés, también llamado yoga massage, es una antigua técnica terapéutica asiática que mezcla sabidurías del yoga, el budismo y la acupuntura china, y que se enseñaba en los templos.',
+        what2: 'Trabaja sobre las líneas energéticas del cuerpo, llamadas «sen», y busca restaurar el equilibrio físico y mental liberando tensiones. Con estiramientos asistidos hacia posturas de yoga y puntos de acupresión, deja una sensación de liviandad, relajación y tranquilidad mental.',
+        howTitle: 'Cómo es una sesión',
+        howSub: 'Con ropa cómoda, sobre una superficie acolchada en el suelo y sin aceites.',
+        step1t: 'Conversamos',
+        step1d: 'Antes de empezar hablamos de cómo llegas y de las zonas donde sientes tensión o molestias.',
+        step2t: 'Estiramientos y acupresión',
+        step2d: 'Estiramientos asistidos hacia posturas de yoga y presión sobre puntos de las líneas «sen», ajustada a cada persona.',
+        step3t: 'Sonoterapia',
+        step3d: 'Cada sesión termina con una breve sonoterapia, para integrar lo trabajado y volver con calma.',
+        sessKicker: 'Sesiones',
+        sessTitle: 'Elige el tiempo que necesitas',
+        sessNote: 'La sesión completa dura 2 horas; también hago sesiones de 1 hora y de 1 hora y media. Hay packs de varias sesiones: escríbeme y te cuento los valores.',
+        faqTitle: 'Preguntas frecuentes',
+        faq: [
+          {
+            q: '¿Qué ropa tengo que llevar?',
+            a: 'Ropa cómoda, que te permita moverte con libertad. El masaje se hace con ropa y sin aceites.'
+          },
+          {
+            q: '¿En qué se diferencia de un masaje con aceites?',
+            a: 'Se hace en el suelo, sobre una superficie acolchada, con ropa y sin aceites. En vez de deslizamientos, trabaja con estiramientos asistidos hacia posturas de yoga y presión sobre puntos de las líneas «sen».'
+          },
+          {
+            q: '¿Es un masaje fuerte?',
+            a: 'La presión se ajusta a cada persona, así que puede ser tan suave o tan profundo como necesites.'
+          },
+          {
+            q: '¿Cuánto dura una sesión?',
+            a: 'La sesión completa es de 2 horas. También hay sesiones de 60 minutos y de 1 hora y media.'
+          },
+          {
+            q: 'Nunca me hice uno, ¿es para mí?',
+            a: 'Sí. Varias de las reseñas son de personas que lo probaban por primera vez. Antes de empezar conversamos para ajustar la sesión a lo que necesitas.'
+          },
+          { q: '¿Atiendes en inglés?', a: 'Sí, las sesiones pueden ser en español o en inglés.' },
+          {
+            q: '¿Cuánto cuesta?',
+            a: 'Depende de la duración, y hay packs de varias sesiones. Escríbeme por WhatsApp y te cuento los valores.'
+          }
+        ],
+        endTitle: '¿Reservamos tu sesión?',
+        endBody: 'Escríbeme por WhatsApp, cuéntame cómo llegas y buscamos el horario que te acomode.',
+        cross: 'También doy clases de Hatha yoga.',
+        crossLink: 'Conocer las clases'
+      }
     },
 
     en: {
@@ -167,7 +281,121 @@
         waIntro: 'Hi Rocío, I’m',
         waInterest: 'I’m interested in'
       },
-      footer: { tagline: 'Yoga and traditional Thai massage, given with calm and care.', rights: 'All rights reserved' }
+      footer: { tagline: 'Yoga and traditional Thai massage, given with calm and care.', rights: 'All rights reserved' },
+      meta: {
+        home: 'Tadana: Hatha yoga classes in person and online, and traditional Thai massage with Rocío. Book your session.',
+        yoga: 'Hatha yoga in small groups, in person and live online on Google Meet. Classes in Spanish and English with Rocío, a teacher trained in India.',
+        masaje: 'Traditional Thai massage: assisted stretches and acupressure, without oils and in comfortable clothing. Sessions from 60 min to 2 hours, trained in Chiang Mai.'
+      },
+      more: { yoga: 'Discover the classes', masaje: 'More about Thai massage' },
+      yogaPage: {
+        title: 'Hatha yoga classes, in person and online',
+        sub: 'Small groups, personal attention and a practice that respects your pace. In Spanish and English.',
+        ctaBook: 'Book a class',
+        ctaSchedule: 'See the schedule',
+        whatTitle: 'Much more than exercise',
+        what1: 'Yoga means «union»: a method to balance and harmonize body, mind and emotions. It is a science of life that helps you find harmony on every level: physical, mental, emotional and spiritual.',
+        what2: 'In Hatha yoga we work with postures held for several breaths, syncing movement with the breath until we reach a meditative state. It is a practice of body awareness, with respect and self-care, that strengthens your vital energy and invites you to explore your limits.',
+        howTitle: 'What a class is like',
+        howSub: 'Every practice follows the same path: from movement to stillness.',
+        step1t: 'Postures',
+        step1d: 'Postures held for several breaths, adapted to your experience and to what your body needs that day.',
+        step2t: 'Breath',
+        step2d: 'Movement is synced with the breath. It is what joins body and mind and brings you into the present.',
+        step3t: 'Stillness',
+        step3d: 'The practice leads you towards a meditative state, into calm and quiet.',
+        whenTitle: 'Formats and schedule',
+        presDetail: 'In a small group, with personal attention.',
+        onlineDetail: 'Live classes, from wherever you are.',
+        oneLabel: 'One-to-one',
+        oneInfo: 'In person or online · by arrangement',
+        oneDetail: 'A personalized practice, adapted to your body and your moment.',
+        priceNote: 'There are drop-in classes and class packs. Message me and I’ll share the prices.',
+        trainKicker: 'Training',
+        trainTitle: 'Trained in India',
+        train1: 'I trained as a teacher at the Pankaj Yogpeeth school in Varkala, India, and I have been practising yoga for over 7 years.',
+        train2: 'I value people exactly as they are, without judgement and without expectations, and that is what I try to bring to every class.',
+        aboutLink: 'More about me',
+        faqTitle: 'Frequently asked questions',
+        faq: [
+          {
+            q: 'Do I need previous experience?',
+            a: 'No. Classes adapt to your experience and to what you need that day. Groups are small, so I can give you personal attention and offer variations of each posture.'
+          },
+          {
+            q: 'What style of yoga do you teach?',
+            a: 'Hatha yoga: postures held for several breaths, with movement synced to the breath, leading towards a meditative state.'
+          },
+          {
+            q: 'How do the online classes work?',
+            a: 'They are live on Google Meet, on Tuesdays and Fridays at 7:00 am, so you can practise from wherever you are.'
+          },
+          { q: 'Are classes in English?', a: 'Yes. I teach in Spanish and in English.' },
+          {
+            q: 'Do you offer private classes?',
+            a: 'Yes: one-to-one sessions, in person or online, adapted to your body and your moment.'
+          },
+          {
+            q: 'How much does a class cost?',
+            a: 'There are drop-in classes and packs, both in person and online. Message me on WhatsApp and I’ll share the prices.'
+          }
+        ],
+        endTitle: 'Would you like to try a class?',
+        endBody: 'Message me and we’ll arrange your first practice, in person or online.',
+        cross: 'I also offer traditional Thai massage.',
+        crossLink: 'Discover Thai massage'
+      },
+      masajePage: {
+        title: 'Traditional Thai massage',
+        sub: 'Assisted stretches and acupressure to release tension and return to calm. In Spanish and English.',
+        ctaBook: 'Book a session',
+        ctaSessions: 'See session lengths',
+        what1: 'Traditional Thai massage, also known as yoga massage, is an ancient Asian therapeutic technique blending the wisdom of yoga, Buddhism and Chinese acupuncture, once taught in the temples.',
+        what2: 'It works on the body’s energy lines, called «sen», and seeks to restore physical and mental balance by releasing tension. Through assisted stretches into yoga postures and acupressure points, it leaves a feeling of lightness, relaxation and mental calm.',
+        howTitle: 'What a session is like',
+        howSub: 'In comfortable clothing, on a padded surface on the floor and without oils.',
+        step1t: 'We talk',
+        step1d: 'Before we begin, we talk about how you are arriving and where you feel tension or discomfort.',
+        step2t: 'Stretches and acupressure',
+        step2d: 'Assisted stretches into yoga postures and pressure on points along the «sen» lines, adjusted to each person.',
+        step3t: 'Sound therapy',
+        step3d: 'Every session ends with a short sound therapy, to integrate the work and come back calmly.',
+        sessKicker: 'Sessions',
+        sessTitle: 'Choose the time you need',
+        sessNote: 'The full session lasts 2 hours; I also offer 1-hour and 1.5-hour sessions. There are multi-session packs: message me and I’ll share the prices.',
+        faqTitle: 'Frequently asked questions',
+        faq: [
+          {
+            q: 'What should I wear?',
+            a: 'Comfortable clothing that lets you move freely. The massage is done clothed and without oils.'
+          },
+          {
+            q: 'How is it different from an oil massage?',
+            a: 'It is done on the floor, on a padded surface, clothed and without oils. Instead of gliding strokes, it works with assisted stretches into yoga postures and pressure on points along the «sen» lines.'
+          },
+          {
+            q: 'Is it a strong massage?',
+            a: 'The pressure is adjusted to each person, so it can be as gentle or as deep as you need.'
+          },
+          {
+            q: 'How long is a session?',
+            a: 'The full session is 2 hours. There are also 60-minute and 1.5-hour sessions.'
+          },
+          {
+            q: 'I’ve never had one — is it for me?',
+            a: 'Yes. Several of the reviews are from people trying it for the first time. Before we begin, we talk so the session fits what you need.'
+          },
+          { q: 'Do you work in English?', a: 'Yes, sessions can be in Spanish or in English.' },
+          {
+            q: 'How much does it cost?',
+            a: 'It depends on the length, and there are multi-session packs. Message me on WhatsApp and I’ll share the prices.'
+          }
+        ],
+        endTitle: 'Shall we book your session?',
+        endBody: 'Message me on WhatsApp, tell me how you’re feeling and we’ll find a time that works for you.',
+        cross: 'I also teach Hatha yoga classes.',
+        crossLink: 'Discover the classes'
+      }
     }
   };
 
@@ -218,11 +446,6 @@
       btn.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
 
-    var desc = lang === 'en'
-      ? 'Tadana: Hatha yoga classes in person and online, and traditional Thai massage with Rocío. Book your session.'
-      : 'Tadana: clases de yoga Hatha presenciales y online, y masaje tradicional tailandés con Rocío. Reserva tu hora.';
-    var meta = $('meta[name="description"]');
-    if (meta) { meta.setAttribute('content', desc); }
   }
 
   function setLang(next) {
