@@ -6,7 +6,9 @@ HTML, CSS y JavaScript plano. Se sube tal cual.
 ## Estructura
 
 ```
-index.html              Home completa (única página por ahora)
+index.html              Home (resumen de todo, one-page)
+yoga/index.html         /yoga/ — página del servicio de yoga
+masaje-thai/index.html  /masaje-thai/ — página del masaje thai
 site.webmanifest        Iconos e identidad para instalación en móvil
 robots.txt / sitemap.xml
 vercel.json             Cabeceras de caché y seguridad
@@ -57,6 +59,28 @@ El proyecto `tadana-web` sigue conectado al repo y publica cada push en
 `https://tadana-web.vercel.app`. Se usa para previews de ramas antes de tocar producción.
 Lleva `X-Robots-Tag: noindex` en `vercel.json` para que esa copia no le compita en Google
 al dominio real.
+
+## Páginas de servicio
+
+Mismo esquema que `ancordverticales.cl`: cada servicio tiene su página, con su propio
+`<title>`, descripción, canonical y Open Graph, y tres bloques JSON-LD (`Service`,
+`FAQPage` y `BreadcrumbList`). El menú y los botones del hero de la home apuntan ahí;
+las secciones `#yoga` y `#masaje` de la home siguen existiendo como resumen.
+
+- Las URLs son carpetas con barra final (`/yoga/`, `/masaje-thai/`). El guion en
+  `masaje-thai` no es estético: Google lo lee como espacio, así que la URL coincide con
+  la búsqueda «masaje thai»; `masajethai` sería una sola palabra que nadie escribe.
+- En las subpáginas **todas las rutas son absolutas** (`/assets/...`, `/#contacto`).
+  Una ruta relativa ahí apunta a `/yoga/assets/...` y da 404.
+- Header, menú y footer están copiados en cada página (no hay build). Si se cambia
+  uno, hay que cambiar los tres archivos.
+- Las preguntas frecuentes están dos veces por página: en el HTML visible y en el
+  JSON-LD `FAQPage`. Si se edita una respuesta, se editan las dos (y la versión EN del
+  `DICT`).
+- La portada de las subpáginas no lleva foto a propósito: las fotos disponibles son
+  verticales y de 1200 px como mucho. Cuando lleguen los originales se puede sumar.
+- La descripción de cada página se traduce con `data-i18n-attr="content:meta.X"` en el
+  `<meta name="description">`; las claves viven en `DICT.es.meta` / `DICT.en.meta`.
 
 ## Decisiones que conviene recordar
 

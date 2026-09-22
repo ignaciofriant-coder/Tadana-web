@@ -366,7 +366,7 @@ ul{ list-style:none; padding:0; margin:0; }
 .four{ position:relative; background:var(--cream); padding:var(--pad-section) var(--pad-x); }
 .section-head{ text-align:center; margin-bottom:clamp(40px,5vw,64px); }
 .section-head__title{ font-size:clamp(32px,5vw,54px); margin-bottom:14px; text-wrap:balance; }
-.section-head__sub{ font-size:15.5px; line-height:1.8; color:var(--grey); max-width:560px; margin:0 auto; }
+.section-head__sub{ font-size:15.5px; line-height:1.8; color:var(--grey); max-width:560px; margin:0 auto; text-wrap:pretty; }
 
 .four__grid{
   display:grid;
@@ -673,7 +673,7 @@ ul{ list-style:none; padding:0; margin:0; }
 }
 .footer__mark{ height:58px; width:auto; filter:brightness(0) invert(1); opacity:.9; margin-bottom:14px; }
 .footer__name{ font-family:var(--serif); font-size:30px; color:#f7f5f2; margin:0 0 10px; }
-.footer__tagline{ font-size:14.5px; line-height:1.75; max-width:420px; margin:0 auto 30px; }
+.footer__tagline{ font-size:14.5px; line-height:1.75; max-width:420px; margin:0 auto 30px; text-wrap:pretty; }
 .footer a{ color:var(--on-green); }
 .footer a:hover{ color:#fff; }
 .footer__contact{
@@ -691,6 +691,175 @@ ul{ list-style:none; padding:0; margin:0; }
   border-top:1px solid rgba(255,255,255,.12);
   font-size:12.5px;
   letter-spacing:.06em;
+}
+
+/* ============================================================
+   11. PÁGINAS DE SERVICIO  (/yoga/ · /masaje-thai/)
+   ============================================================ */
+
+/* Portada sin foto a propósito: las que hay son verticales y de 1200 px
+   como mucho; estiradas a lo ancho se verían como el hero viejo. El fondo
+   oscuro deja que el header transparente (texto blanco) se lea igual que
+   sobre la foto de la home. */
+.page-hero{
+  position:relative;
+  background:var(--green);
+  color:var(--on-green);
+  padding:clamp(132px,15vw,184px) var(--pad-x) clamp(68px,8vw,104px);
+  text-align:center;
+  overflow:hidden;
+}
+.page-hero__inner{ position:relative; animation:fadeUp .9s ease both; }
+.page-hero__ornament{
+  position:absolute;
+  width:clamp(300px,42vw,560px);
+  height:auto;
+  right:-8%; bottom:-24%;
+  color:rgba(224,180,140,.11);
+  pointer-events:none;
+}
+.page-hero__glyph{
+  position:absolute;
+  bottom:4%; right:3%;
+  font-family:var(--serif);
+  font-size:clamp(100px,15vw,220px);
+  line-height:1;
+  color:rgba(224,180,140,.075);
+  pointer-events:none;
+  user-select:none;
+}
+.page-hero .kicker{ color:var(--on-green-accent); }
+.page-hero__title{
+  color:#f7f5f2;
+  font-size:clamp(36px,6vw,64px);
+  line-height:1.08;
+  margin:0 0 20px;
+  text-wrap:balance;
+}
+.page-hero__sub{
+  font-size:clamp(16px,2.2vw,18.5px);
+  line-height:1.7;
+  max-width:560px;
+  margin:0 auto 34px;
+  text-wrap:pretty;
+}
+.page-hero__ctas{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+
+.crumbs{
+  font-size:12px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--on-green);
+  margin:0 0 28px;
+}
+.crumbs a{ color:var(--on-green-accent); border-bottom:1px solid rgba(242,221,199,.35); }
+.crumbs a:hover{ color:#fff; }
+.crumbs span[aria-hidden]{ margin:0 10px; opacity:.55; }
+
+.btn-outline--light{ border-color:rgba(242,221,199,.7); color:var(--on-green-accent); }
+.btn-outline--light:hover{ background:var(--on-green-accent); border-color:var(--on-green-accent); color:var(--text); }
+
+.nav__link[aria-current="page"]{ border-bottom-color:var(--hdr-accent); }
+.menu__link[aria-current="page"]{ color:var(--hdr-accent); }
+
+/* ---------- Bloques ---------- */
+.block{ position:relative; padding:var(--pad-section) var(--pad-x); }
+.block--cream{ background:var(--cream); }
+.block--center{ text-align:center; }
+.block__title{ font-size:clamp(30px,4.6vw,48px); line-height:1.12; margin:0 0 22px; text-wrap:balance; }
+.block__foot{ text-align:center; margin-top:28px; }
+.block__foot .note{ margin-bottom:22px; }
+
+.block--dark{ background:var(--green); color:var(--on-green); overflow:hidden; }
+.block--dark .wrap,
+.block--dark .wrap-xs{ position:relative; }
+.block--dark .kicker{ color:var(--on-green-accent); }
+.block--dark .block__title{ color:#f7f5f2; }
+.block--dark .body-text{ color:var(--on-green); }
+.block--dark .note{ color:var(--on-green); font-size:15px; line-height:1.85; max-width:520px; margin:0 auto 30px; text-wrap:pretty; }
+.block--dark .figure-arch img{ box-shadow:0 22px 50px rgba(0,0,0,.3); }
+.block--dark .figure-arch figcaption{ color:var(--on-green-accent); }
+
+/* En la home, beneficios y duraciones viven sobre el fondo oscuro */
+.benefits--light .benefits__mark{ color:var(--a2); }
+.durations--center{ justify-content:center; }
+
+.schedule--three{ grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+.schedule__detail{ font-size:14px; line-height:1.65; color:var(--grey); margin:10px 0 0; }
+
+/* ---------- Pasos ---------- */
+.steps{
+  list-style:none;
+  padding:0;
+  margin:0 auto;
+  max-width:1040px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:clamp(18px,2.6vw,28px);
+}
+.step{ background:var(--paper); border-radius:20px; padding:30px 28px; }
+.step__n{
+  display:block;
+  font-family:var(--display);
+  font-size:46px;
+  line-height:1;
+  color:var(--a1);
+  font-variant-numeric:lining-nums;
+  margin-bottom:16px;
+}
+.step h3{ font-size:23px; margin:0 0 10px; }
+.step p{ font-size:15px; line-height:1.8; color:var(--grey); margin:0; }
+
+/* ---------- Preguntas frecuentes ---------- */
+.faq{ border-top:1px solid rgba(120,117,110,.3); }
+.faq__item{ border-bottom:1px solid rgba(120,117,110,.3); }
+.faq__item summary{
+  list-style:none;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:22px 4px;
+  font-family:var(--serif);
+  font-size:clamp(18px,2.2vw,21px);
+  line-height:1.35;
+  color:var(--text);
+}
+.faq__item summary::-webkit-details-marker{ display:none; }
+.faq__item summary::after{
+  content:'+';
+  flex:none;
+  font-family:var(--sans);
+  font-weight:300;
+  font-size:26px;
+  line-height:1;
+  color:var(--a2);
+  transition:transform .25s ease;
+}
+.faq__item[open] summary::after{ transform:rotate(45deg); }
+.faq__item summary:hover{ color:var(--a3); }
+.faq__item p{ margin:0; padding:0 4px 24px; font-size:15.5px; line-height:1.85; color:var(--grey); max-width:680px; }
+
+/* ---------- Cierre ---------- */
+.cta-end{ padding:var(--pad-section) var(--pad-x); text-align:center; }
+.cta-end__title{ font-size:clamp(30px,4.8vw,50px); margin:0 0 16px; text-wrap:balance; }
+.cta-end__body{ font-size:16px; line-height:1.8; color:var(--grey); max-width:520px; margin:0 auto 30px; text-wrap:pretty; }
+.cta-end__cross{ margin:36px 0 0; font-size:15px; color:var(--grey); }
+.cta-end__cross a{ margin-left:6px; border-bottom:1px solid currentColor; }
+
+/* Home: botón de precios + enlace a la página del servicio */
+.actions{ display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+
+/* Footer: enlaces a los servicios */
+.footer__nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:6px 28px;
+  font-family:var(--display);
+  font-size:20px;
+  margin:0 0 22px;
 }
 
 /* ============================================================
@@ -725,6 +894,16 @@ ul{ list-style:none; padding:0; margin:0; }
 }
 
 @media (max-width:600px){
+  /* Portada de servicio y botones de la home: apilados, porque dos
+     botones en mayúsculas no entran lado a lado en 375 px */
+  .page-hero__ctas{ flex-direction:column; align-items:stretch; max-width:340px; margin:0 auto; }
+  .actions{ flex-direction:column; align-items:stretch; }
+  .schedule--three{ grid-template-columns:1fr; }
+  .page-hero__ctas .btn,
+  .page-hero__ctas .btn-outline,
+  .actions .btn,
+  .actions .btn-outline{ text-align:center; }
+
   /* El hero ocupaba la pantalla entera y quedaba mucho cielo vacío arriba.
      Algo más bajo, y con la foto recortada, se ve el texto antes. */
   .hero{ min-height:86vh; min-height:86svh; }
